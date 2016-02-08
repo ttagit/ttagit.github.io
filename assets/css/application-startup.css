@@ -12,10 +12,7 @@
   position: absolute;
   right: 0;
   bottom: -40px;
-<<<<<<< HEAD
   color: #262F36;
-=======
->>>>>>> bc61bf5af26d2aac81616760d2e1b1b13ea1ef69
   background-color: #262F36;
 }
 @media (min-width: 768px) {
