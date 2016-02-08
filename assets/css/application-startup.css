@@ -13,6 +13,7 @@
   right: 0;
   bottom: -40px;
   color: #262F36;
+  background-color: #262F36;
 }
 @media (min-width: 768px) {
   .app-graph {
