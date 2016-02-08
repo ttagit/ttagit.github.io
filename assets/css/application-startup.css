@@ -12,6 +12,7 @@
   position: absolute;
   right: 0;
   bottom: -40px;
+  background-color: #262F36;
 }
 @media (min-width: 768px) {
   .app-graph {
