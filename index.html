@@ -213,9 +213,7 @@ On any webpage in Safari you can now go to the share menu and click TTAGIT to us
         <h6 class="text-muted text-uppercase">Embeddable Button</h6>
         <h3 class="m-t-0">Embed TTAGIT onto your Website.</h3>
         <p class="lead m-b-md text-muted">Cut and paste the Javascript into the Head of your Website. Place the TTAGIT <code>&lt;div id='ttagit'&gt;&lt;/div&gt;</code> on the pages or Post loop layout where you want the embed to display on your site or pages.</p>
-        <button class="btn btn-default btn-lg btn-borderless">
-          Click to Copy
-        </button>
+        <div id='ttagit'></div>
       </div>
     </div>
   </div>
@@ -413,6 +411,8 @@ On any webpage in Safari you can now go to the share menu and click TTAGIT to us
        c.parentNode.insertBefore(n,c);
     }();
 </script>
+
+<script type="text/javascript">(function(d, s, id){var js,div, tjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) {return;}js = d.createElement(s);js.id = id;div = d.createElement('div');div.id='ttagit';js.src = "https://ttagit.org/secure/latest.min.js";tjs.parentNode.insertBefore(js, tjs);if(!d.getElementById('ttagit')) d.getElementsByTagName('body')[0].appendChild(div);}(document, 'script', 'ttagitSdk'));</script>
 
 
   </body>
