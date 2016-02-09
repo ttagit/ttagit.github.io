@@ -146,7 +146,7 @@
   width: 100%;
 }
 .btn-lg:not(.btn-block) {
-  padding: 12px 20px;
+  padding: 12px 50px;
 }
 @media (min-width: 768px) {
   .btn-lg:not(.btn-block) {
