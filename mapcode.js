@@ -148,7 +148,7 @@
 
 		// Define the Lattitude and Longitude for the map location
 
-                var myLatLng = new google.maps.LatLng(45.088530, -64.367951);
+                var myLatLng = new google.maps.LatLng(49.281312, -123.113013);
 
 		// Define the map marker characteristics
 
