@@ -1,6 +1,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,12 +16,10 @@
   </style>
   <!--
       You need to include this script tag on any page that has a Google Map.
-
       The following script tag will work when opening this example locally on your computer.
       But if you use this on a localhost server or a live website you will need to include an API key.
       Sign up for one here (it's free for small usage):
           https://developers.google.com/maps/documentation/javascript/tutorial#api_key
-
       After you sign up, use the following script tag with YOUR_GOOGLE_API_KEY replaced with your actual key.
       -->
           <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxt90DGVMjZzSTeJbM_AE4mEyEmM5ASnk&sensor=false"></script>
@@ -30,29 +29,23 @@
   <script type="text/javascript">
       // When the window has finished loading create our google map below
       google.maps.event.addDomListener(window, 'load', init);
-
       function init() {
           // Basic options for a simple Google Map
           // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
           var mapOptions = {
               // How zoomed in you want the map to start at (always required)
               zoom: 14,
-
               // The latitude and longitude to center the map (always required)
               center: new google.maps.LatLng(49.281312, -123.113013), // New York
-
               // How you would like to style the map.
               // This is where you would paste any style found on Snazzy Maps.
               styles: [{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"hue":"#f49935"}]},{"featureType":"road.highway","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"hue":"#fad959"}]},{"featureType":"road.arterial","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.local","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"hue":"#a1cdfc"},{"saturation":30},{"lightness":49}]}]
               };
-
           // Get the HTML DOM element that will contain your map
           // We are using a div with id="map" seen below in the <body>
           var mapElement = document.getElementById('map');
-
           // Create the Google Map using our element and options defined above
           var map = new google.maps.Map(mapElement, mapOptions);
-
           // Let's also add a marker while we're at it
           var marker = new google.maps.Marker({
               position: new google.maps.LatLng(49.281312, -123.113013),
@@ -64,31 +57,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
     <meta name="keywords" content="">
-
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Peer driven comments using Twitter and Facebook, including relative data to the URL permalink.">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Leigh Akin">
-    <title>TTAGIT</title>
-
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@ttagit2">
-    <meta name="twitter:title" content="TTAGIT - Comments and Sentiments">
-    <meta name="twitter:description" content="TTAGIT collects comments and Sentiments relative to the URL">
-    <meta name="twitter:image:src" content="http://ttagit.com/images/TTAGIT.png">
-
-    <meta property="og:title" content="TTAGIT - Comment and Sentiment Engine">
-    <meta property="og:site_name" content="TTAGIT">
-    <meta property="og:url" content="http://ttagit.com">
-    <meta property="og:description" content="TTAGIT collects comments and Sentiments relative to the URL">
-    <meta property="og:image" content="http://ttagit.com/images/TTAGIT.png" />
-    <meta property="fb:app_id" content="453827841445663">
-    <meta property="og:type" content="website">
+    <meta name="author" content="">
 
     <meta name="google-site-verification" content="qWchQV2wI4IV_kxGtaDzD48ym5w_7HTR1RMKGZEiUqg" />
 
@@ -98,10 +69,12 @@
 
     </title>
 
-      <link rel="stylesheet" href="assets/css/flat-ui.css">
-      <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic|Work+Sans:300,400,500,600' rel='stylesheet' type='text/css'>
 
-      <link rel="shortcut icon" href="startup/flat-ui/images/favicon.ico">
+      <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic|Work+Sans:300,400,500,600' rel='stylesheet' type='text/css'>
+      <link href="assets/css/toolkit-startup.css" rel="stylesheet">
+      <link href="assets/css/application-startup.css" rel="stylesheet">
+
+
 
 
 
@@ -491,11 +464,10 @@ On any webpage in Safari you can now go to the share menu and click TTAGIT to us
 
 </div>
 
-     <!-- Placed at the end of the document so the pages load faster -->
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/toolkit.js"></script>
     <script src="assets/js/application.js"></script>
-
 
     <script type="text/javascript">
     window._chatlio = window._chatlio||[];
