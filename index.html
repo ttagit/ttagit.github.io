@@ -64,9 +64,31 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="author" content="">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Peer driven comments using Twitter and Facebook, including relative data to the URL permalink.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Leigh Akin">
+    <title>TTAGIT</title>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@ttagit2">
+    <meta name="twitter:title" content="TTAGIT - Comments and Sentiments">
+    <meta name="twitter:description" content="TTAGIT collects comments and Sentiments relative to the URL">
+    <meta name="twitter:image:src" content="http://ttagit.com/images/TTAGIT.png">
+
+    <meta property="og:title" content="TTAGIT - Comment and Sentiment Engine">
+    <meta property="og:site_name" content="TTAGIT">
+    <meta property="og:url" content="http://ttagit.com">
+    <meta property="og:description" content="TTAGIT collects comments and Sentiments relative to the URL">
+    <meta property="og:image" content="http://ttagit.com/images/TTAGIT.png" />
+    <meta property="fb:app_id" content="453827841445663">
+    <meta property="og:type" content="website">
 
     <meta name="google-site-verification" content="qWchQV2wI4IV_kxGtaDzD48ym5w_7HTR1RMKGZEiUqg" />
 
@@ -81,7 +103,9 @@
       <link href="assets/css/toolkit-startup.css" rel="stylesheet">
       <link href="assets/css/application-startup.css" rel="stylesheet">
 
-      <link rel="stylesheet" href="startup/flat-ui/css/flat-ui.css">
+      <link rel="stylesheet" href="assets/css/flat-ui.css">
+
+      <link rel="shortcut icon" href="startup/flat-ui/images/favicon.ico">
 
 
 
@@ -474,10 +498,12 @@ On any webpage in Safari you can now go to the share menu and click TTAGIT to us
 
 </div>
 
-
+     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/toolkit.js"></script>
     <script src="assets/js/application.js"></script>
+
+    <script src="startup/common-files/js/startup-kit.js"></script>
 
     <script type="text/javascript">
     window._chatlio = window._chatlio||[];
