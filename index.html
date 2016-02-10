@@ -76,6 +76,10 @@
                           '</div>'+
                           '</div>';
 
+          // Define the image to use for the map marker (58 x 44 px)
+
+                    var image = 'http://uploads.webflow.com/537f700d5bb0a27f34444d0c/53b054015eb95f024f4d7c5e_map_marker.png';
+
 
           // Let's also add a marker while we're at it
           var marker = new google.maps.Marker({
@@ -83,6 +87,18 @@
               map: map,
               title: 'Snazzy!'
           });
+
+          // Following Lines are needed if you use the Info Window to display content when map marker is clicked
+
+  var infowindow = new google.maps.InfoWindow({
+                       content: contentString
+                   });
+
+   // Following line turns the marker, into a clickable button and when clicked, opens the info window
+
+         google.maps.event.addListener(mapMarker, 'click', function() {
+             infowindow.open(map, mapMarker);
+         });
       }
   </script>
     <meta charset="utf-8">
