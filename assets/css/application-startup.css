@@ -66,9 +66,11 @@
 
 
 /* pull quote block */
+.app-high-praise {
+  height: 550px;
+}
 .app-high-praise img {
   width: 100%;
-  height: 550px;
 }
 
 
