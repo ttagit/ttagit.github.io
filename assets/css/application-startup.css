@@ -13,14 +13,12 @@
   right: 0;
   bottom: -40px;
   background-color: #752565;
-  background: #2595FF;
 }
 @media (min-width: 768px) {
   .app-graph {
     width: 100%;
     bottom: 0;
     background-color: #752565;
-    background: #2595FF;
   }
 }
 
@@ -185,6 +183,9 @@
   color: #2595FF;
 }
 
+.bluebird {
+  color: #2595FF;
+}
 
 .fa-lg {
     font-size: 1.33333333em;
