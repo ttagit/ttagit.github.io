@@ -105,8 +105,7 @@
 }
 .app-price-plans .container {
   margin-bottom: -60px;
-  height: 100%;
-  position: absolute;
+  min-height: 100%;
 }
 
 
