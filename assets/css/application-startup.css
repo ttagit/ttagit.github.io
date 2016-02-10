@@ -3,7 +3,6 @@
   font-weight: 500;
   letter-spacing: .05em;
   position: absolute;
-  color: #2595FF;
 }
 
 
@@ -181,6 +180,10 @@
 }
 
 .fa-twitter {
+  color: #2595FF;
+}
+
+.fa fa-twitter {
   color: #2595FF;
 }
 
