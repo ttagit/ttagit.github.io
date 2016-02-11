@@ -274,25 +274,14 @@ On any webpage in Safari you can now go to the share menu and click TTAGIT to us
   </div>
 </div>
 
-<div id='main'>
-     <div class='container'>
-       <div class='row' id='content'>
-         <div class='col-xs-12 col-md-12 col-lg-12 vcenter text-center'>
-         <div class="stockTick">
-           </div>
-            </div>
-             </div>
-              <div class='row footer' id='footer'>
-                <div class='col-xs-12 col-md-12 col-lg-12 vcenter text-center'>
-                               </div>
-                       </div>
-               </div>
-       </div>
 
 <div class="block block-bordered-lg">
   <div class="container">
     <div class="row">
     <div class="col-sm-8 col-sm-offset-2 text-center m-b-lg">
+
+      <div class="stockTick">
+        </div>
 
       <p class="lead m-x-auto">With over <strong>20 years of collective experience</strong>, we take the unthinkable and make it just a couple quick taps away.</p>
     </div>
@@ -482,7 +471,7 @@ On any webpage in Safari you can now go to the share menu and click TTAGIT to us
 						$.getJSON(url,function(data){
 						var stockInfo = data[0];
 						var stockString = 'Symbol: ' + data.query.results.quote.symbol + ' Last: ' + data.query.results.quote.LastTradePriceOnly + ' Bid: ' + data.query.results.quote.Bid + ' Ask: ' + data.query.results.quote.Ask + ' Volume: ' + data.query.results.quote.Volume;
-						$('.stockTick').html('<p>' + stockString + '</p>');
+						$('.stockTick').html('<h3>' + stockString + '</h3>');
 						                });
 						        })
 						        </script>
