@@ -280,8 +280,8 @@ On any webpage in Safari you can now go to the share menu and click TTAGIT to us
     <div class="row">
     <div class="col-sm-8 col-sm-offset-2 text-center m-b-lg">
 
-      <p class="lead m-x-auto"><div class="stockTick">
-              </div></p>
+      <div class="stockTick">
+              </div>
 
     </div>
     </div>
@@ -470,7 +470,7 @@ On any webpage in Safari you can now go to the share menu and click TTAGIT to us
 						$.getJSON(url,function(data){
 						var stockInfo = data[0];
 						var stockString = 'Symbol: ' + data.query.results.quote.symbol + ' Last: ' + data.query.results.quote.LastTradePriceOnly + ' Bid: ' + data.query.results.quote.Bid + ' Ask: ' + data.query.results.quote.Ask + ' Volume: ' + data.query.results.quote.Volume;
-						$('.stockTick').html('<h2>' + stockString + '</h2>');
+						$('.stockTick').html('<h1 class="statcard-number block-title">' + stockString + '</h1>');
 						                });
 						        })
 						        </script>
