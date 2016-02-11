@@ -320,7 +320,6 @@
     padding-top: 30px;
     height: 0;
     overflow: hidden;
-    border: 15px;
 }
 .videowrapper iframe,
 .videowrapper object,
@@ -330,6 +329,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    border: 15px;
 }
 
 .fa-rotate-90 {
