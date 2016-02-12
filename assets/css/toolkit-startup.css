@@ -8475,6 +8475,9 @@ fieldset[disabled] .navbar-transparent .btn-link:focus {
 .featured-list .featured-list-icon-text {
   font-size: 16px;
 }
+.featured-list .featured-list-icon-text .fa-chrome {
+  font-size: 42px;
+}
 .featured-list li {
   position: relative;
   padding-left: 80px;
