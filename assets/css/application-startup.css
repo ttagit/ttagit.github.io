@@ -187,5 +187,8 @@
 }
 i.fa {
   line-height: inherit;
+}
+i.fa .fa-twitter {
+  line-height: inherit;
   color: #2595ff;
 }
