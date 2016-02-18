@@ -1,7 +1,3 @@
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,15 +28,15 @@
     <meta property="fb:app_id" content="453827841445663">
     <meta property="og:type" content="website">
 
-
     <!-- Custom Fonts -->
       <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
       <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic|Work+Sans:300,400,500,600' rel='stylesheet' type='text/css'>
 
       <!-- theme stylesheet-->
       <link href="assets/css/toolkit-startup.css" rel="stylesheet">
       <link href="assets/css/application-startup.css" rel="stylesheet">
+      <link href="assets/css/application-startup.css" rel="stylesheet">
+      <link href="https://ttagit.org/secure/semantic.min.css" rel="stylesheet">
 
       <style type="text/css">
           /* Set a size for our map container, the Google Map will take up 100% of this container */
@@ -73,7 +69,6 @@
       </style>
     </head>
 
-
   <body>
 
      <!-- Hidden nav menu -->
@@ -95,34 +90,32 @@
     <div class="block block-inverse block-fill-height app-header"
          style="background: #752565;">
 
-         <nav class="navbar navbar-transparent navbar-fixed-top navbar-padded app-navbar p-t-md">
-         <div class="container">
-           <div class="navbar-header">
-             <button type="button" class="navbar-toggle collapsed p-x-0"
-                     data-target="#stage" data-toggle="stage" data-distance="-250">
-               <span class="sr-only">Toggle navigation</span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-             </button>
-             <a class="navbar-brand" href="">
-               <strong style="background: #fff; padding:12px 8px; border-radius: 4px; color: #752464;">
-                 <img class="app-iphone" src="assets/img/logo-purple.png">
-               </strong>
-             </a>
-           </div>
-           <div class="navbar-collapse collapse text-uppercase">
-             <ul class="nav navbar-nav navbar-right">
-               <li >
-                 <a href="http://ttagit.com/blog">Blog</a>
-               </li>
-
-                 <li><a href="http://twitter.com/ttagit2"><i class="fa fa-twitter" style="font-size:42px;"></i></a></li>
-
-             </ul>
-           </div><!--/.nav-collapse -->
+      <nav class="navbar navbar-transparent navbar-fixed-top navbar-padded app-navbar p-t-md">
+       <div class="container">
+         <div class="navbar-header">
+           <button type="button" class="navbar-toggle collapsed p-x-0"
+                   data-target="#stage" data-toggle="stage" data-distance="-250">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+           <a class="navbar-brand" href="">
+             <strong style="background: #fff; padding:12px 8px; border-radius: 4px; color: #752464;">
+               <img class="app-iphone" src="assets/img/logo-purple.png">
+             </strong>
+           </a>
          </div>
-       </nav>
+         <div class="navbar-collapse collapse text-uppercase">
+           <ul class="nav navbar-nav navbar-right">
+            <li >
+              <a href="http://ttagit.com/blog">Blog</a>
+            </li>
+            <li><a href="http://twitter.com/ttagit2"><i class="fa fa-twitter" style="font-size:42px;"></i></a></li>
+           </ul>
+         </div><!--/.nav-collapse -->
+       </div>
+     </nav>
 
 
   <div class="block-xs-middle p-b-lg">
@@ -544,16 +537,16 @@ On any webpage in Safari you can now go to the share menu and click TTAGIT to us
 
 <!--Stock ticker javascript -->
 <script src='http://code.jquery.com/jquery-2.1.0.min.js'></script>
-						<script>
-						$(document).ready(function(){var stock = 'IGD.V';
-						var url = 'http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%3D%22' + stock + '%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=';
-						$.getJSON(url,function(data){
-						var stockInfo = data[0];
-						var stockString = 'Symbol: ' + data.query.results.quote.symbol + ' Last: ' + data.query.results.quote.LastTradePriceOnly + ' Bid: ' + data.query.results.quote.Bid + ' Ask: ' + data.query.results.quote.Ask + ' Volume: ' + data.query.results.quote.Volume;
-						$('.stockTick').html('<p class="lead"><strong>' + stockString + '</strong></p>');
-						                });
-						        })
-						        </script>
+            <script>
+            $(document).ready(function(){var stock = 'IGD.V';
+            var url = 'http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%3D%22' + stock + '%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=';
+            $.getJSON(url,function(data){
+            var stockInfo = data[0];
+            var stockString = 'Symbol: ' + data.query.results.quote.symbol + ' Last: ' + data.query.results.quote.LastTradePriceOnly + ' Bid: ' + data.query.results.quote.Bid + ' Ask: ' + data.query.results.quote.Ask + ' Volume: ' + data.query.results.quote.Volume;
+            $('.stockTick').html('<p class="lead"><strong>' + stockString + '</strong></p>');
+                            });
+                    })
+                    </script>
 
                     <!--
                         You need to include this script tag on any page that has a Google Map.
@@ -568,7 +561,7 @@ On any webpage in Safari you can now go to the share menu and click TTAGIT to us
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
         <script type="text/javascript">
-                        // When the window has finished loading create our google map below
+                        //When the window has finished loading create our google map below
         google.maps.event.addDomListener(window, 'load', init);
                   function init() {
                   // Basic options for a simple Google Map
