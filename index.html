@@ -81,13 +81,8 @@
     <div class="stage-shelf stage-shelf-right hidden" id="sidebar">
       <ul class="nav nav-bordered nav-stacked">
         <li class="nav-header">Examples</li>
-        <li class="active">
-          <a href="http://ttagit.com/blog">Blog</a>
-        </li>
-
-          <li><a href="http://twitter.com/ttagit2"><i class="fa fa-twitter" style="font-size:42px;"></i></a></li>
-
-      </ul>
+        <li><a href="http://twitter.com/ttagit2"><i class="fa fa-twitter" style="font-size:42px;"></i></a></li>
+        </ul>
     </div>
 
     <div class="stage" id="stage">
@@ -113,9 +108,6 @@
          </div>
          <div class="navbar-collapse collapse text-uppercase">
            <ul class="nav navbar-nav navbar-right">
-            <li >
-              <a href="http://ttagit.com/blog">Blog</a>
-            </li>
             <li><a href="http://twitter.com/ttagit2"><i class="fa fa-twitter" style="font-size:42px;"></i></a></li>
            </ul>
          </div><!--/.nav-collapse -->
@@ -224,7 +216,8 @@ On any webpage in Safari you can now go to the share menu and click TTAGIT to us
       <div class="col-sm-5 col-sm-push-7">
         <pre class="app-code">
           <code>
-        &lt;script type="text/javascript"&gt;(function(d, s, id){var js,div, tjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) {return;}js = d.createElement(s);js.id = id;div = d.createElement('div');div.id='ttagit';js.src = "https://ttagit.org/secure/latest.min.js";tjs.parentNode.insertBefore(js, tjs);if(!d.getElementById('ttagit')) d.getElementsByTagName('body')[0].appendChild(div);}(document, 'script', 'ttagitSdk'));&lt;/script&gt;&lt;div id='ttagit'&gt;&lt;/div&gt;
+        &lt;link rel="stylesheet" href="http://ttagit.ca/embed/ttagit.css" /&gt;
+        &lt;script src="http://ttagit.ca/embed/ttagit.js"&gt;&lt;/script&gt;
         </code>
       </pre>
       </div>
