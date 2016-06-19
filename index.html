@@ -220,14 +220,16 @@ On any webpage in Safari you can now go to the share menu and click TTAGIT to us
     <div class="row app-align-center">
       <div class="col-sm-5 col-sm-push-7">
         <pre class="app-code">
-        &lt;script type="text/javascript"&gt;(function(d, s, id){var js,div, tjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) {return;}js = d.createElement(s);js.id = id;div = d.createElement('div');div.id='ttagit';js.src = "https://ttagit.org/secure/latest.min.js";tjs.parentNode.insertBefore(js, tjs);if(!d.getElementById('ttagit')) d.getElementsByTagName('body')[0].appendChild(div);}(document, 'script', 'ttagitSdk'));&lt;/script&gt;&lt;div id='ttagit'&gt;&lt;/div&gt;
+          &lt;link rel="stylesheet" href="http://ttagit.ca/embed/ttagit.css" /&gt;
+          &lt;script src="http://ttagit.ca/embed/ttagit.js"&gt;&lt;/script&gt;
       </pre>
       </div>
 
       <div class="col-sm-6 col-sm-pull-5">
         <h6 class="text-muted text-uppercase">Embeddable Button</h6>
         <h3 class="m-t-0">Embed TTAGIT onto your Website.</h3>
-        <p class="lead m-b-md text-muted">Cut and paste the Javascript into the Head of your Website. Place the TTAGIT <code>&lt;div id='ttagit'&gt;&lt;/div&gt;</code> on the pages or Post loop layout where you want the embed to display on your site or pages.</p>
+        <p class="lead m-b-md text-muted">Cut and paste the Javascript into the Head of your Website. Place the TTAGIT <code>&lt;button id="ttagit-button"&gt;&lt;/button&gt;</code> on the pages or Post loop layout where you want the embed to display on your site or pages.</p>
+        <button id="ttagit-button"></button>
         <!--<div id='ttagit'></div>-->
       </div>
     </div>
